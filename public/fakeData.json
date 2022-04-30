@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Detour ",
+        "price": "4000",
+        "serviceProvider": "Al Haramain Bangladesh",
+        "image": "https://i.ibb.co/Xbwxtzg/picture16.jpg",
+        "id": "150",
+        "description":"Take a left turn and embark on a fragrant journey into uncharted territory, where flowers, fruits, spices ands woods colour the path of your adventure in a strong."
+    },
+    {
+        "name": "Musk Maliki",
+        "price": "3950",
+        "serviceProvider": "Al Haramain England",
+        "image": "https://i.ibb.co/qxW85MY/pictue4.jpg",
+        "id": "151",
+        "description":"The Musk Maliki is like a garden full of bloomed colourful flowers and Bulgarian rose. As you enter the garden, an airy top note will sprinkle dews of freshness to you"
+    },
+    {
+        "name": "Royel Mask",
+        "price": "4390",
+        "serviceProvider": "Al Haramain Australia",
+        "image": "https://i.ibb.co/KFfVhnt/picture3.jpg",
+        "id": "152",
+        "description":"The best adjective to describe our Royal Musk is “Sensational”. The royal musk is the intriguing scent with boldness of citrusy notes like bergamot and pepper"
+        
+    },
+    {
+        "name": "Exel Green",
+        "price": "450",
+        "serviceProvider": "AL Haramain New Zealand",
+        "image": "https://i.ibb.co/cFKMJjc/picture10.jpg",
+        "id": "158",
+        "description":"A pleasant fragrance that delicately unifies sweet, fruity & Woody notes. The fruity, woody fragrance of Excellent from Al Haramain ."
+    },
+    {
+        "name": "Exel Gold",
+        "price": "450",
+        "serviceProvider": "AL Haramain India",
+        "image": "https://i.ibb.co/vQzkMKz/picture7.jpg",
+        "id": "161",
+        "description":"Excellent Woman’ is a tribute to the spirit and strength of women in gracefully performing a series of significant roles within a lifetime."
+    },
+    {
+        "name": "Haramain Rougue",
+        "price": "680",
+        "serviceProvider": "Al Haramain America",
+        "image": "https://i.ibb.co/3mDjZ9c/picture11.jpg",
+        "id": "162",
+        "description" : "Scent from above! The feeling of inner peace is palpable. The deep satisfaction with the day gone by is comforting." 
+    },
+    {
+        "name": "Royel Musk",
+        "price": "620",
+        "serviceProvider": "AL Haramain Japan",
+        "image": "https://i.ibb.co/vJttVmZ/picture1.jpg",
+        "id": "153"
+    },
+    {
+        "name": "Portfolio",
+        "price": "385",
+        "serviceProvider": "AL Haramain Bangladesh",
+        "image": "https://i.ibb.co/ScwCvpv/picture5.jpg",
+        "id": "154"
+    },
+    {
+        "name": "Madinah",
+        "price": "785",
+        "serviceProvider": "AL Haramain Madinah",
+        "image": "https://i.ibb.co/rySJQGy/picture6.jpg",
+        "id": "155"
+    },
+    {
+        "name": "",
+        "price": "700",
+        "serviceProvider": "AL Haramain London",
+        "image": "https://i.ibb.co/4f4RYKd/picture8.jpg",
+        "id": "156"
+    },
+    {
+        "name": "",
+        "price": "600",
+        "serviceProvider": "AL Haramain Dubai",
+        "image": "https://i.ibb.co/jzt6hQ3/picture9.jpg",
+        "id": "157"
+    },
+    
+    {
+        "name": "",
+        "price": "650",
+        "serviceProvider": "AL Haramain Katar",
+        "image": "https://i.ibb.co/gT0tZNV/picture12.jpg",
+        "id": "159"
+    },{
+        "name": "",
+        "price": "480",
+        "serviceProvider": "AL Haramain Bangladesh",
+        "image": "https://i.ibb.co/D8VkN39/picture2.jpg",
+        "id": "160"
+    }
+    
+
+
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
