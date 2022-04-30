@@ -4,11 +4,14 @@ import Products from "../Products/Products";
 import ServiceSlider from "../ServiceSlider/ServiceSlider";
 
 const Home = () => {
+  
   return (
     <div>
       <Banner />
       <ServiceSlider />
       <Products />
+      
+      
     </div>
   );
 };

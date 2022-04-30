@@ -21,14 +21,14 @@
 .supplier{
     color : rgb(29, 80, 60);
 }
-.button-product{
+.button-product-card{
     width: 100%;
     background-color: #cf97be;
     border: none;
     height: 40px;
     border-radius: 5px;
 }
-.button-product:hover{
+.button-product-card:hover{
     background-color: black;
     color: white;
     transition: ease-in 0.5s;

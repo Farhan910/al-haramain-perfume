@@ -4,7 +4,6 @@ import "./ProductsCard.css";
 
 const ProductsCard = ({ product }) => {
   const { name, price, serviceProvider, image, description } = product;
-  console.log(product);
   return (
     <div
       data-aos="fade-up"
@@ -16,16 +15,14 @@ const ProductsCard = ({ product }) => {
           <img className="card-images" src={image} alt={image} />
           <div className="card-text">
             <div className="">
-            <span className="text-danger "> ৳: </span>
-            {price}
-            <h3>{name}</h3>
+              <span className="text-danger "> ৳: </span>
+              {price}
+              <h3>{name}</h3>
             </div>
-            
-
             <p className="supplier">Supplier: {serviceProvider}</p>
             <p> {description}</p>
           </div>
-          <button className="button-product">Go somewhere</button>
+          <button className="button-product-card">Go somewhere</button>
         </Card.Body>
       </Card>
     </div>

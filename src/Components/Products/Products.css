@@ -4,3 +4,15 @@
     grid-gap: 80px;
     margin-top: 200px;
 }
+.button-product{
+    width: 120px;
+    background-color: #cf97be;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
+.button-product:hover{
+    background-color: black;
+    color: white;
+    transition: ease-in 0.5s;
+}
