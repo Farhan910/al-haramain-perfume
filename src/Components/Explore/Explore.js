@@ -7,7 +7,6 @@ const Explore = () => {
   
   return (
       <div>
-            <button onClick="">Click here </button>
           
           <div className="products-card container">
             {products.map((product) => (

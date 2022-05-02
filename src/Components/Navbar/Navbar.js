@@ -23,6 +23,12 @@ const Navbar = () => {
           <Link className=" links ms-3" to="/about">
             About
           </Link>
+          <Link className=" links ms-3" to="/login">
+            Login
+          </Link>
+          <Link className=" links ms-3" to="/signup">
+            Sign Up
+          </Link>
         </div>
       </div>
     </div>

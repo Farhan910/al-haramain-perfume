@@ -1,9 +1,15 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./ProductsCard.css";
 
 const ProductsCard = ({ product }) => {
-  const { name, price, serviceProvider, image, description } = product;
+  const { id, name, price, serviceProvider, image, description } = product;
+  const navigate = useNavigate();
+  const handleProductClick = (id) => {
+    navigate(`/products/${id}`);
+  };
+
   return (
     <div
       data-aos="fade-up"
@@ -22,7 +28,12 @@ const ProductsCard = ({ product }) => {
             <p className="supplier">Supplier: {serviceProvider}</p>
             <p> {description}</p>
           </div>
-          <button className="button-product-card">Go somewhere</button>
+          <button
+            onClick={() => handleProductClick(id)}
+            className="button-product-card"
+          >
+            Go somewhere
+          </button>
         </Card.Body>
       </Card>
     </div>

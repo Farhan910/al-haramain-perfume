@@ -1,8 +1,14 @@
 .products-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 80px;
+    grid-gap: 40px;
     margin-top: 200px;
+}
+.product{
+    
+    background-image: url(/src/Images/bg7.jpg);
+    
+ 
 }
 .button-product{
     width: 120px;
