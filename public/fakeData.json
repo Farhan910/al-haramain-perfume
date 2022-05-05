@@ -4,98 +4,120 @@
         "price": "4000",
         "serviceProvider": "Al Haramain Bangladesh",
         "image": "https://i.ibb.co/Xbwxtzg/picture16.jpg",
-        "id": "150",
-        "description":"Take a left turn and embark on a fragrant journey into uncharted territory, where flowers, fruits, spices ands woods colour the path of your adventure in a strong."
+        "quantity": "200",
+        "shortDescription":"Take a left turn and embark on a fragrant into uncharted territory, where flowers, fruits, spices ands woods colour the path of you",
+        "mainDescription":"Take a left turn and embark on a fragrant journey into uncharted territory, where flowers, fruits, spices ands woods colour the path of your adventure in a strong, memorable way. Whatever your dreams and fantasies are, experience the exquisite aromas the Detour Noir offers and take a break from the usual and discover adventure down the road less taken."
     },
     {
         "name": "Musk Maliki",
         "price": "3950",
         "serviceProvider": "Al Haramain England",
         "image": "https://i.ibb.co/qxW85MY/pictue4.jpg",
-        "id": "151",
-        "description":"The Musk Maliki is like a garden full of bloomed colourful flowers and Bulgarian rose. As you enter the garden, an airy top note will sprinkle dews of freshness to you"
+        "quantity": "190",
+        "shortDescription":"The Musk Maliki is like a garden full of bloomed colourful flowers and Bulgarian rose. As you enter the garden.",
+        "mainDescription":"The Musk Maliki is like a garden full of bloomed colourful flowers. As you enter the garden, an airy top note will sprinkle dews of freshness to you. The citrusy essence of Green apple and Violet balanced with Lemon creates the first impression impeccable. As you walk by the garden, you will discover Moroccan & Italian Jasmine with Bulgarian rose and Sweet Geranium. The citrusy notes will make you noticeable in every room. By the end of the journey, you will feel captivated by the sensation from sandalwoods and sophistication of Musk."
+        
     },
     {
         "name": "Royel Mask",
-        "price": "4390",
+        "price": "15,500",
         "serviceProvider": "Al Haramain Australia",
         "image": "https://i.ibb.co/KFfVhnt/picture3.jpg",
-        "id": "152",
-        "description":"The best adjective to describe our Royal Musk is “Sensational”. The royal musk is the intriguing scent with boldness of citrusy notes like bergamot and pepper"
+        "quantity": "30",
+        "shortDescription":"The best adjective to describe our Royal Musk is “Sensational”. The royal musk is the intriguing scent with boldness .",
+        "mainDescription":"The best adjective to describe our Royal Musk is “Sensational”. The royal musk is the intriguing scent with boldness of citrusy notes like bergamot and pepper. A little Ylang Ylang, Jasmine and Lily of the valley has brought some excitement to the fragrance. No matter what, you will definitely get noticed for your vibrancy while wearing the royal musk. The vividness of floral sweetness is well balanced with Beeswax to enhance your personality."
         
     },
     {
         "name": "Exel Green",
-        "price": "450",
+        "price": "385",
         "serviceProvider": "AL Haramain New Zealand",
         "image": "https://i.ibb.co/cFKMJjc/picture10.jpg",
-        "id": "158",
-        "description":"A pleasant fragrance that delicately unifies sweet, fruity & Woody notes. The fruity, woody fragrance of Excellent from Al Haramain ."
+        "quantity": "310",
+        "shortDescription":"A pleasant fragrance that delicately unifies sweet, fruity & Woody notes. The fruity, woody fragrance of Excellent from Al Haramain .",
+        "mainDescription":"Based on the popular 'Excellent Eau de Parfum for Men'. A pleasant fragrance that delicately unifies sweet, fruity & Woody notes. The fruity, woody fragrance of Excellent from Al Haramain is the signature scent of such a man who lives life on his terms and along the way in meeting failures and successes, takes a little more than his share of the blame and a little less than his share of the credit!"
     },
     {
         "name": "Exel Gold",
         "price": "450",
         "serviceProvider": "AL Haramain India",
         "image": "https://i.ibb.co/vQzkMKz/picture7.jpg",
-        "id": "161",
-        "description":"Excellent Woman’ is a tribute to the spirit and strength of women in gracefully performing a series of significant roles within a lifetime."
+        "quantity": "80",
+        "shortDescription":"Excellent Woman’ is a tribute to the spirit and strength of women in gracefully performing a series of significant roles within a lifetime.",
+        "mainDescription":"Excellent Woman’ is a tribute to the spirit and strength of women in gracefully performing a series of significant roles within a lifetime."
     },
     {
         "name": "Haramain Rougue",
-        "price": "680",
+        "price": "385",
         "serviceProvider": "Al Haramain America",
         "image": "https://i.ibb.co/3mDjZ9c/picture11.jpg",
-        "id": "162",
-        "description" : "Scent from above! The feeling of inner peace is palpable. The deep satisfaction with the day gone by is comforting." 
+        "quantity": "50",
+        "shortDescription" : "Scent from above! The feeling of inner peace is palpable. The deep satisfaction with the day gone by is comforting." ,
+        "mainDescription":"Haramain Noora Deodorant Body Spray by Al Haramain Perfumes A refreshing deodorant body spray based on the beautiful Noora Perfume. The Noora is a floral offering with green and fresh nuances. A delightful and warm scent that is enhanced by the Musky and Woody base notes."
     },
     {
-        "name": "Royel Musk",
+        "name": "Junoon Noir",
         "price": "620",
         "serviceProvider": "AL Haramain Japan",
         "image": "https://i.ibb.co/vJttVmZ/picture1.jpg",
-        "id": "153"
+        "quantity": "130",
+        "shortDescription":"A refreshingly pleasant kind of madness awaits you in Junoon Noir, the kind that draws you to it with an alluring mystery hidden for you .",
+        "mainDescription":"A refreshingly pleasant kind of madness awaits you in Junoon Noir, the kind that draws you to it with an alluring mystery hidden for you to discover, to experience, to remember and to spread. Its opulently floral heart is topped with an invigorating, fresh, citrusy opening of lime and kumquat whilst simultaneously giving you tempting hints of its warm, sultry and woody base to entice you onto a charming an enthralling journey that will be mesmerising for you and for those around you."
+        
     },
     {
         "name": "Portfolio",
         "price": "385",
         "serviceProvider": "AL Haramain Bangladesh",
         "image": "https://i.ibb.co/ScwCvpv/picture5.jpg",
-        "id": "154"
+        "quantity": "260",
+        "shortDescription":"Portfolio Cupid's Rose by Al Haramain Perfumes is a Amber Floral fragrance for women and men. This is a new fragrance. ",
+        "mainDescription":""
     },
     {
         "name": "Madinah",
         "price": "785",
         "serviceProvider": "AL Haramain Madinah",
         "image": "https://i.ibb.co/rySJQGy/picture6.jpg",
-        "id": "155"
+        "quantity": "90",
+        "shortDescription":"Scent from above! The feeling of inner peace is palpable. The deep satisfaction with the day gone by is comforting.",
+        "mainDescription":""
     },
     {
-        "name": "",
+        "name": "Signature Gold",
         "price": "700",
         "serviceProvider": "AL Haramain London",
         "image": "https://i.ibb.co/4f4RYKd/picture8.jpg",
-        "id": "156"
+        "quantity": "120",
+        "shortDescription":"Introducing the Deodorant version to the modern and fresh Signature Rose Gold for Women. A light and airy cocktail of fresh Summer scents .",
+        "mainDescription":""
     },
     {
-        "name": "",
+        "name": "Opposite",
         "price": "600",
         "serviceProvider": "AL Haramain Dubai",
         "image": "https://i.ibb.co/jzt6hQ3/picture9.jpg",
-        "id": "157"
+        "quantity": "450",
+        "shortDescription":"Haramain Opposite Pink Deodorant Body Spray by Al Haramain Perfumes A new deodorant spray based on the  Opposite Pink Eau de Parfume.",
+        "mainDescription":""
     },
     
     {
-        "name": "",
+        "name": "Signature MEN ",
         "price": "650",
         "serviceProvider": "AL Haramain Katar",
         "image": "https://i.ibb.co/gT0tZNV/picture12.jpg",
-        "id": "159"
+        "quantity": "250",
+        "shortDescription":"A vibrant deodorant spray based on the classic Signature  EDP for Men. A refreshingly masculine offering that fuses various floral notes .",
+        "mainDescription":""
     },{
-        "name": "",
+        "name": "Spray L' Aventure Blanche 100 ML",
         "price": "480",
         "serviceProvider": "AL Haramain Bangladesh",
         "image": "https://i.ibb.co/D8VkN39/picture2.jpg",
-        "id": "160"
+        "quantity": "100",
+        "shortDescription":"Hot on the heels of success of L'aventure, the House of Al Haramain introduce the all-new Blanche edition for Her. ",
+        "mainDescription":""
     }
     
 

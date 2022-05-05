@@ -10,7 +10,7 @@ const Explore = () => {
           
           <div className="products-card container">
             {products.map((product) => (
-              <ProductsCard key={product.id} product={product} />
+              <ProductsCard key={product._id} product={product} />
             ))}
           </div>
         </div>

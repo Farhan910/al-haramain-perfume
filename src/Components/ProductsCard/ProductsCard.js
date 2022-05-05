@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./ProductsCard.css";
 
 const ProductsCard = ({ product }) => {
-  const { id, name, price, serviceProvider, image, description } = product;
+  const { id, name, price, serviceProvider, image, shortDescription } = product;
   const navigate = useNavigate();
   const handleProductClick = (id) => {
     navigate(`/products/${id}`);
@@ -16,7 +16,7 @@ const ProductsCard = ({ product }) => {
       data-aos-anchor-placement="center-bottom"
       className="cards"
     >
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "18rem" }} id="card">
         <Card.Body>
           <img className="card-images" src={image} alt={image} />
           <div className="card-text">
@@ -26,13 +26,13 @@ const ProductsCard = ({ product }) => {
               <h3>{name}</h3>
             </div>
             <p className="supplier">Supplier: {serviceProvider}</p>
-            <p> {description}</p>
+            <p> {shortDescription}</p>
           </div>
           <button
             onClick={() => handleProductClick(id)}
             className="button-product-card"
           >
-            Go somewhere
+            Update
           </button>
         </Card.Body>
       </Card>

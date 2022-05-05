@@ -13,7 +13,7 @@ const Footer = () => {
             <p> <span className="icons me-2"><FaRegAddressCard /></span> House#12, Road#19, Sector#07, Uttara, Dhaka-1230, <br/> Bangladesh</p>
             <p> <span className="icons me-2"><FaRegAddressCard /></span> KA-244, Kuril, Jamuna Future Park, GB-001 Southeast <br/> ground floor, Vatara, Dhaka-1229</p>
             <p> <BsFillTelephoneFill className="me-2"/> +88 018 887 022 84</p>
-            <a className="icons-social" href="https://www.facebook.com/farhan.faruk.9022"><BsFacebook/></a>
+            <a className="icons-social" href="https://www.facebook.com/farhan.faruk.9022 " ><BsFacebook/></a>
             <a className="icons-social" href="https://www.youtube.com/"><BsYoutube/></a>
             <a className="icons-social" href="https://www.linkedin.com/in/farhan-ahmed-1b8b3a220/"><BsLinkedin/></a>
             <a className="icons-social" href="https://github.com/Farhan910"><BsGithub/></a>
