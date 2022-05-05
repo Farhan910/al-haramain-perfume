@@ -22,3 +22,8 @@
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
 }
+.selles-text{
+    display: flex;
+    width: 300px;
+    border-bottom: 1px solid #000 ;
+}

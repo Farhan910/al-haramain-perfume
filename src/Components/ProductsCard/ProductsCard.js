@@ -14,8 +14,9 @@ const ProductsCard = ({ product }) => {
     <div
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
-      className="cards"
+      
     >
+      
       <Card style={{ width: "18rem" }} id="card">
         <Card.Body>
           <img className="card-images" src={image} alt={image} />

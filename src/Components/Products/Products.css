@@ -6,7 +6,7 @@
 }
 .product{
     
-    background-image: url(/src/Images/bg7.jpg);
+    background-image: url(../../Images/bg1.png);
     
  
 }
@@ -21,4 +21,12 @@
     background-color: black;
     color: white;
     transition: ease-in 0.5s;
+}
+.product-title{
+
+    position: absolute;
+    right:250px;
+    top: 60%;
+    font-weight: bold;
+    font-size: 50px;
 }

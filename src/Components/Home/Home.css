@@ -1,3 +1,4 @@
 .home{
-    background-image: url(/src/Images/bg5.png);
+    background-image: url(/src/Images/bg6.jpg);
+    background-size: contain;
 }

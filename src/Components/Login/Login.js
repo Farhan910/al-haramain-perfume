@@ -4,6 +4,7 @@ import "./Login.css";
 import { FcGoogle } from "react-icons/fc";
 import {
   useAuthState,
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -11,6 +12,7 @@ import auth from "../firebase.init";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loading from "../Loading/Loading";
+import { sendPasswordResetEmail } from "firebase/auth";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -19,6 +21,8 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
+  const [sendPasswordResetEmail, sending, error2] =
+    useSendPasswordResetEmail(auth);
 
   
   const location = useLocation();
@@ -35,7 +39,7 @@ const Login = () => {
     toast("Login Successful", { type: "success" });
   }
 
-  if (error||error1) {
+  if (error||error1 ) {
     toast(error1||error.message, { type: "error" });
   }
   return (
@@ -61,6 +65,17 @@ const Login = () => {
       <p className="mt-3">
         You haven't an account ? <Link to="/signup">Create a account</Link>
       </p>
+      
+      <button
+          className="button-reset"
+          onClick={async () => {
+            await sendPasswordResetEmail(email);
+            toast("Sent email");
+          }}
+        >
+          Reset password
+        </button>
+        <br />
       <input
         onClick={() => signInWithEmailAndPassword(email, password)}
         type="submit"

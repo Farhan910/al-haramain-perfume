@@ -48,7 +48,7 @@ const SignUp = () => {
 
   
   return (
-    <div>
+    <div className="sign-up">
       <div className="text-center login">
         <h2 className="or-border m-auto mb-5"> Sign Up </h2>
         <input
