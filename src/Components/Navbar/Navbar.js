@@ -50,9 +50,6 @@ const Navbar = () => {
           <Link className=" links ms-3" to="/blogs">
             Blogs
           </Link>
-          <Link className=" links ms-3" to="/about">
-            About
-          </Link>
 
           {user ? (
             <Link onClick={handleSignOut} className=" links ms-3" to="#">
