@@ -5,7 +5,7 @@ import useProducts from '../Hooks/Hooks';
 
 const MyItem = () => {
 
-    const [product , setProduct] = useState([]);
+    
     const [user] = useAuthState(auth);
     useEffect(() => {
         fetch(`https://salty-atoll-21303.herokuapp.com/myitem?email=${user?.email}`,{

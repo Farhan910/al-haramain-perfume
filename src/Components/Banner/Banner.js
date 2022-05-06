@@ -8,9 +8,7 @@ import { Carousel } from "react-bootstrap";
 const Banner = () => {
   return (
     <div>
-      {/* <h1 className="banner-text text-white">Hello this is haramain shop , <br/> welcome to our shop</h1>
-            <img className="img-container" src={banner} alt="" /> */}
-
+     
       <Carousel>
         <Carousel.Item>
           <img
@@ -19,8 +17,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3></h3>
-            <p></p>
+          
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -31,8 +28,7 @@ const Banner = () => {
           />
 
           <Carousel.Caption>
-            <h3></h3>
-            <p></p>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -43,10 +39,7 @@ const Banner = () => {
           />
 
           <Carousel.Caption>
-            <h3></h3>
-            <p>
-              
-            </p>
+            
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

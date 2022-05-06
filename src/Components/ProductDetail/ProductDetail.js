@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useProducts from "../Hooks/Hooks";
@@ -8,11 +8,7 @@ const ProductDetail = () => {
   const { id } = useParams();
 
   const [refresh, setRefresh] = useState(0);
-  // useEffect(() => {
-  //   fetch(`https://salty-atoll-21303.herokuapp.com/product/${id}`)
-  //     .then((response) => response.json())
-  //     .then((data) => setProducts(data));
-  // });
+  
 
   const [products] = useProducts(refresh);
   const navigate = useNavigate();
@@ -68,7 +64,7 @@ const ProductDetail = () => {
       const quantity = Number(q) + Number(input) ;
       const updateProduct = {name , price, shortDescription, mainDescription, quantity, image, serviceProvider}
 
-      fetch(`http://localhost:5000/product/${id}`, {
+      fetch(`https://salty-atoll-21303.herokuapp.com/product/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

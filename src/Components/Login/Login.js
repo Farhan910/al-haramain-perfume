@@ -43,7 +43,7 @@ const Login = () => {
 
   if (user || user1 || user2) {
     
-    fetch("http://localhost:5000/login", {
+    fetch("https://salty-atoll-21303.herokuapp.com/login", {
       method: "POST",
       body: JSON.stringify({
         email: user?.email || user1?.email || user2?.email,
