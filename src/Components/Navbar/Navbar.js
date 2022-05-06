@@ -23,7 +23,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="ms-3 mt-4">
+        <div className="ms-3 mt-4 links-add-items">
           {user ? (
             <>
               <Link className=" links ms-3 " to="/additem">

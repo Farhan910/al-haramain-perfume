@@ -5,18 +5,16 @@ import useProducts from "../Hooks/Hooks";
 import "./ProductDetail.css";
 
 const ProductDetail = () => {
-  const [quantity, setQuantity] = useState(0);
   const { id } = useParams();
 
-  const [product, setProducts] = useState();
-  useEffect(() => {
-    fetch(`http://localhost:5000/product/${id}`)
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  });
-  console.log(product);
+  const [refresh, setRefresh] = useState(0);
+  // useEffect(() => {
+  //   fetch(`https://salty-atoll-21303.herokuapp.com/product/${id}`)
+  //     .then((response) => response.json())
+  //     .then((data) => setProducts(data));
+  // });
 
-  const [products] = useProducts();
+  const [products] = useProducts(refresh);
   const navigate = useNavigate();
 
   const handleProducts = () => {
@@ -25,28 +23,78 @@ const ProductDetail = () => {
 
   const productDetail = products?.find((product) => product._id === id);
 
-  const handleDecreseQuantity = () => {
-    if (quantity > 1) {
-      const final = quantity - 1;
-      setQuantity(final);
-      console.log(final);
+
+  const handleDecreesProducts = (id) => {
+    const proceed = window.confirm('are you sure ?')
+    if(proceed){
+      
+      const name = productDetail.name;
+      const price = productDetail.price;
+      const shortDescription = productDetail.shortDescription;
+      const mainDescription = productDetail.mainDescription;
+      const q = productDetail.quantity;
+      const image = productDetail.image;
+      const serviceProvider = productDetail.serviceProvider;
+      const quantity = Number(q) - 1   > 0 ? Number(q) - 1 : 0;
+      const updateProduct = {name , price, shortDescription, mainDescription, quantity, image, serviceProvider}
+
+      fetch(`https://salty-atoll-21303.herokuapp.com/product/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updateProduct),
+      })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+
+      setRefresh(refresh + 1);
     }
-  };
 
-  //  console.log(productDetail[0]);
-  //  const {name, description} = productDetail[0];
+    }
 
+    const handleIncressProducts = (id,e) => {
+
+      e.preventDefault();
+
+      const input = e.target.number.value;
+      const name = productDetail.name;
+      const price = productDetail.price;
+      const shortDescription = productDetail.shortDescription;
+      const mainDescription = productDetail.mainDescription;
+      const q = productDetail.quantity;
+      const image = productDetail.image;
+      const serviceProvider = productDetail.serviceProvider;
+      const quantity = Number(q) + Number(input) ;
+      const updateProduct = {name , price, shortDescription, mainDescription, quantity, image, serviceProvider}
+
+      fetch(`http://localhost:5000/product/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updateProduct),
+      })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+
+      setRefresh(refresh + 1);
+      e.target.reset();
+
+    }
+  
+  
   return (
     <div>
       <div className="row ms-5 m-0">
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-12">
           <img
             className="detail-card-images"
             src={productDetail?.image}
             alt=""
           />
         </div>
-        <div className="detail-card-text col-lg-4 m-auto">
+        <div className="detail-card-text col-lg-4 col-12 m-auto">
           <div className="">
             <span className="text-danger "> ৳: </span>
             {productDetail?.price}
@@ -56,15 +104,19 @@ const ProductDetail = () => {
           <p> {productDetail?.mainDescription}</p>
           <p> Quantity: {productDetail?.quantity}</p>
           <div className="d-flex justify-content-between">
-          <button
-            onClick={() => handleDecreseQuantity()}
-            className="button-manage"
-          >
-            Delivered
-          </button>
-          <button className="manage-button" onClick={handleProducts}>
-            Manage products
-          </button>
+            <button
+             onClick={() => handleDecreesProducts(productDetail?._id)}
+              className="button-manage me-2"
+            >
+              Delivered
+            </button>
+            <form onSubmit={(e) => handleIncressProducts(productDetail?._id,e)}>
+            <input type="number" name="number" id="" />
+            <input type="submit" value="Add" />
+            </form>
+            <button className="manage-button manage-p ms-2" onClick={handleProducts}>
+              Manage products
+            </button>
           </div>
         </div>
       </div>

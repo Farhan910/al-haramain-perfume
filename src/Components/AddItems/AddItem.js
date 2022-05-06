@@ -1,9 +1,13 @@
 import axios from "axios";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import auth from "../firebase.init";
 import './AddItem.css'
 
 const AddItem = () => {
+    const [user] = useAuthState(auth);
+    console.log(user);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const product = {
@@ -13,9 +17,12 @@ const AddItem = () => {
       image: e.target.image?.value,
       quantity: e.target.quantity?.value,
       serviceProvider: e.target.serviceProvider.value,
+      email: user.email,
     }
+    e.target.reset()
+    
     const { data } = await axios
-      .post("http://localhost:5000/product", product)
+      .post("https://salty-atoll-21303.herokuapp.com/product", product)
       console.log(data);  
   };
   const { register  } = useForm();

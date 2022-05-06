@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import './ManageProducts.css'
 import useProducts from "../Hooks/Hooks";
 
 const ManageProducts = () => {
-  const [products] = useProducts();
+
+    const [refresh, setRefresh] = useState(0);
+    
+    const handleDelete = (id) => {
+        const proceed = window.confirm("Are you sure you want to delete this item?");
+        if(proceed){
+            fetch(`https://salty-atoll-21303.herokuapp.com/product/${id}`, {
+                method: "DELETE",
+            })
+            .then(res => res.json())
+            .then(data =>console.log(data));
+        }
+        setRefresh(refresh + 1);
+      
+       
+    }
+  const [products] = useProducts(refresh);
   const [user] =useAuthState(auth);
   console.log(user?.name);
 
@@ -21,7 +37,7 @@ const ManageProducts = () => {
                 <th className="">Name</th>
                 <th className="t-head">Price</th>
                 <th className="t-head">Quantity</th>
-                <th className="t-head">Email</th>
+                <th className="t-head">Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -35,6 +51,7 @@ const ManageProducts = () => {
                 <td className="t-head"> {product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.quantity}</td>
+                <button className="delete" onClick={() => handleDelete(product._id)}>Delete</button>
               </tr>)
               })}
             </tbody>

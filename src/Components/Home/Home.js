@@ -6,6 +6,7 @@ import ProductsCard from "../ProductsCard/ProductsCard";
 import Selles from "../Selles/Selles";
 import ServiceSlider from "../ServiceSlider/ServiceSlider";
 import { useNavigate } from "react-router-dom";
+import Address from "../Address/Address";
 
 const Home = () => {
   const [products] = useProducts();
@@ -30,6 +31,8 @@ const Home = () => {
 
      </div>
       <Selles />
+
+      <Address/>
     </div>
   );
 };

@@ -24,23 +24,41 @@ const Login = () => {
   const [sendPasswordResetEmail, sending, error2] =
     useSendPasswordResetEmail(auth);
 
-  
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
   const [user2] = useAuthState(auth);
-  if (user2) {
-    navigate(from, { replace: true });
+  // if (user2) {
+  //   navigate(from, { replace: true });
+  // }
+  if (loading || loading1) {
+    return <Loading />;
   }
-  if(loading ||loading1){
-    return <Loading/>
-      
-  }
-  if (user||user1) {
+  if (user || user1) {
     toast("Login Successful", { type: "success" });
   }
 
-  if (error||error1 ) {
-    toast(error1||error.message, { type: "error" });
+  if (error || error1) {
+    toast(error1 || error.message, { type: "error" });
+  }
+
+  if (user || user1 || user2) {
+    
+    fetch("http://localhost:5000/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email: user?.email || user1?.email || user2?.email,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        localStorage.setItem("accessToken", data?.token);
+        console.log(data.token);
+      });
+      toast.success("Login Successful");
+      navigate(from, { replace: true });
   }
   return (
     <div className="text-center login">
@@ -65,17 +83,17 @@ const Login = () => {
       <p className="mt-3">
         You haven't an account ? <Link to="/signup">Create a account</Link>
       </p>
-      
+
       <button
-          className="button-reset"
-          onClick={async () => {
-            await sendPasswordResetEmail(email);
-            toast("Sent email");
-          }}
-        >
-          Reset password
-        </button>
-        <br />
+        className="button-reset"
+        onClick={async () => {
+          await sendPasswordResetEmail(email);
+          toast("Sent email");
+        }}
+      >
+        Reset password
+      </button>
+      <br />
       <input
         onClick={() => signInWithEmailAndPassword(email, password)}
         type="submit"
