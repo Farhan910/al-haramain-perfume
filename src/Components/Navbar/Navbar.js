@@ -13,12 +13,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="d-flex navbar-container sticky-top ">
+      <div className="d-flex navbar-container  " sticky="top">
         <div className=" nav-name nav-logo mt-3">
           <a>
             <h2>
               <GiDelicatePerfume className=" " />
-              <span className="nav-name-text">AL HARAMAIN   <span className="since">1970</span> </span>
+              <span className="nav-name-text">AL HARAMAIN  <br /> <span className="since">1970</span> </span>
             </h2>
           </a>
         </div>
@@ -50,6 +50,7 @@ const Navbar = () => {
           <Link className=" links ms-3" to="/blogs">
             Blogs
           </Link>
+          
 
           {user ? (
             <Link onClick={handleSignOut} className=" links ms-3" to="#">

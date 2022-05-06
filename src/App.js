@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./Components/About/About";
 import AddItem from "./Components/AddItems/AddItem";
 import Blog from "./Components/Blogs/Blog";
 import Footer from "./Components/Footer/Footer";
