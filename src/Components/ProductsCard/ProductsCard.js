@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "./ProductsCard.css";
 
 const ProductsCard = ({ product }) => {
-  const { id, name, price, serviceProvider, image, shortDescription } = product;
+  console.log(product);
+  const { _id, name, price, serviceProvider, image, shortDescription } = product;
   const navigate = useNavigate();
   const handleProductClick = (id) => {
     navigate(`/products/${id}`);
@@ -30,7 +31,7 @@ const ProductsCard = ({ product }) => {
             <p> {shortDescription}</p>
           </div>
           <button
-            onClick={() => handleProductClick(id)}
+            onClick={() => handleProductClick(_id)}
             className="button-product-card"
           >
             Update

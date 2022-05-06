@@ -6,7 +6,11 @@
 }
 .product{
     
-    background-image: url(../../Images/bg1.png);
+    background-image: url(../../Images/bg59.jpg);
+    background-size:    cover ;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+   
     
  
 }

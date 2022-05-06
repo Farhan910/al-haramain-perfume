@@ -15,24 +15,30 @@ const Navbar = () => {
     <div>
       <div className="d-flex navbar-container sticky-top ">
         <div className=" nav-name nav-logo mt-3">
-          <a href="">
+          <a>
             <h2>
-              <GiDelicatePerfume className=" " />{" "}
-              <span className="nav-name-text">AL HARAMAIN </span>
+              <GiDelicatePerfume className=" " />
+              <span className="nav-name-text">AL HARAMAIN   <span className="since">1970</span> </span>
             </h2>
           </a>
         </div>
 
         <div className="ms-3 mt-4">
-          <Link className=" links ms-3 " to="/additem">
-            Add Item
-          </Link>
-          <Link className=" links ms-3" to="/myitem">
-            My Item
-          </Link>
-          <Link className=" links ms-3" to="/manageitems">
-            Manage Items
-          </Link>
+          {user ? (
+            <>
+              <Link className=" links ms-3 " to="/additem">
+                Add Item
+              </Link>
+              <Link className=" links ms-3" to="/myitem">
+                My Item
+              </Link>
+              <Link className=" links ms-3" to="/manageitems">
+                Manage Items
+              </Link>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="ms-auto me-5 mt-4 ">
           <Link className=" links" to="/">

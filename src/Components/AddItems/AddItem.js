@@ -21,7 +21,7 @@ const AddItem = () => {
   const { register  } = useForm();
   
   return (
-    <div className="">
+    <div className="my-5">
       <h2 className="form">Add Items</h2>
       <div className="form">
       <form className="input" onSubmit={handleSubmit}>
@@ -31,7 +31,7 @@ const AddItem = () => {
         <input className="input"type="text" {...register("image")} placeholder="URL" />
         <input className="input"type="text" {...register("quantity")} placeholder="Quantity" />
         <input className="input"type="text" {...register("serviceProvider")} placeholder="Supplier" />
-        <input className="input"type="submit" value="Submit" />
+        <input className="input mx-auto"type="submit" value="Submit" />
       </form>
       </div>
     </div>

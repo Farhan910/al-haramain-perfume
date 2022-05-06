@@ -1,5 +1,5 @@
 .navbar-container{
-    background-color: #cf97be;
+    background-color: #2A2016;
     height: 75px;
 }
 .links{
@@ -13,11 +13,11 @@
 }
 .nav-name {
     
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 50px;
    
 } 
-.nav-name a{
+.nav-name{
     text-decoration: none;
     color: #fff;
 }
@@ -26,4 +26,9 @@
     margin-top: 10px;
     
 
+}
+.since{
+    font-size: 15px;
+    
+   
 }

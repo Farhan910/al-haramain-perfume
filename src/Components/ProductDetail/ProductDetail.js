@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useProducts from "../Hooks/Hooks";
@@ -6,26 +6,31 @@ import "./ProductDetail.css";
 
 const ProductDetail = () => {
   const [quantity, setQuantity] = useState(0);
-  const  {id}  = useParams();
-  console.log(id);
-  
+  const { id } = useParams();
+
+  const [product, setProducts] = useState();
+  useEffect(() => {
+    fetch(`http://localhost:5000/product/${id}`)
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  });
+  console.log(product);
+
   const [products] = useProducts();
   const navigate = useNavigate();
 
   const handleProducts = () => {
     navigate("/products");
-  }
+  };
 
-  const productDetail = products?.find((product) =>product._id===id);
-  
+  const productDetail = products?.find((product) => product._id === id);
 
   const handleDecreseQuantity = () => {
-    if (quantity > 1 ) {
-     const final = quantity - 1;
-      setQuantity(final)
+    if (quantity > 1) {
+      const final = quantity - 1;
+      setQuantity(final);
       console.log(final);
     }
-   
   };
 
   //  console.log(productDetail[0]);
@@ -50,17 +55,19 @@ const ProductDetail = () => {
           <p className="supplier">Supplier: {productDetail?.serviceProvider}</p>
           <p> {productDetail?.mainDescription}</p>
           <p> Quantity: {productDetail?.quantity}</p>
+          <div className="d-flex justify-content-between">
           <button
             onClick={() => handleDecreseQuantity()}
             className="button-manage"
           >
             Delivered
           </button>
+          <button className="manage-button" onClick={handleProducts}>
+            Manage products
+          </button>
+          </div>
         </div>
-
-       
       </div>
-      <button className="manage-button" onClick={handleProducts}>Manage products</button>
     </div>
   );
 };

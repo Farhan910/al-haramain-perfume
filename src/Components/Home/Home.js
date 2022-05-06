@@ -17,14 +17,18 @@ const Home = () => {
     <div className="home">
       <Banner />
       <ServiceSlider />
+      <h1 className="title-product mx-auto">Products</h1>
       <div className="products-card container">
         {products.slice(0, 6).map((product) => (
           <ProductsCard key={product._id} product={product} />
         ))}
       </div>
-      <button className="manage-button mt-5" onClick={handleProducts}>
+     <div className="text-center">
+     <button className="btn btn-light shadow-none btn-color mt-5 " onClick={handleProducts}>
         Manage products
       </button>
+
+     </div>
       <Selles />
     </div>
   );

@@ -5,7 +5,7 @@
     margin-bottom: 20px;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: black;
+
     padding: 20px;
     
 }
@@ -22,8 +22,14 @@
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
 }
-.selles-text{
-    display: flex;
+
+.title-sells{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    color: #fff;
+    border-bottom: 3px solid #000;
+    height: 50px;
     width: 300px;
-    border-bottom: 1px solid #000 ;
 }
