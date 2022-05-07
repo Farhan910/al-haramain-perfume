@@ -12,7 +12,7 @@ const ServiceSlider = () => {
     <div className="services container">
         <h1 className="title mx-auto ">New Arrivals</h1>
       <div className="serviceSlider row  ">
-        <div data-aos="zoom-in-down" className="col-lg-6 col-12 service-slider-text text-light">
+        <div data-aos="zoom-in-down" className="col-lg-6 col-12 service-slider-text ">
         <h2>Women are like closed boxes filled with emotions</h2>
           <h3>
            A perfect fragrance can not only enhance her style but also describe her dignity and character to the outer world. The right fragrance can be the key to that closed box. Every woman should have a unique trail of fragrance that represents her soul. Also, it’s important to smell good every time you walk into a room! Choosing the perfect fragrance is through following some rules.
@@ -28,7 +28,7 @@ const ServiceSlider = () => {
           <img src={img4} alt="" />
         </div>
 
-        <div data-aos="zoom-in-left" className="col-md-6 text-light">
+        <div data-aos="zoom-in-left" className="col-md-6 service-slider-text">
             <h2>Musk- being a popular note in perfumery is often seen in the base note of perfumes.</h2>
           <h3>
             

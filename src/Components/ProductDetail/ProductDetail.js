@@ -108,7 +108,7 @@ const ProductDetail = () => {
             </button>
             <form onSubmit={(e) => handleIncressProducts(productDetail?._id,e)}>
             <input type="number" name="number" id="" />
-            <input type="submit" value="Add" />
+            <input type="submit" value="Restock" />
             </form>
             <button className="manage-button manage-p ms-2" onClick={handleProducts}>
               Manage products
