@@ -16,11 +16,11 @@
 .counting-text{
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
+    
     margin-right: 100px;
     margin-left: 100px;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
 .title-sells{
@@ -28,7 +28,7 @@
     text-align: center;
     margin-top: 140px;
     margin-bottom: 100px;
-    color: #fff;
+   
     border-bottom: 3px solid #000;
     height: 50px;
     width: 300px;

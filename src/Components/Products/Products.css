@@ -4,16 +4,7 @@
     grid-gap: 40px;
     margin-top: 200px;
 }
-.product{
-    
-    background-image: url(../../Images/bg59.jpg);
-    background-size:    cover ;
-    background-repeat: no-repeat;
-    margin-bottom: 200px;
-   
-    
- 
-}
+
 .button-product{
     width: 120px;
     background-color: #cf97be;
@@ -48,7 +39,7 @@
         font-size: 5px;
         
         text-decoration: none;
-        color: #fff;
+       
        
     } 
     .links{
@@ -102,8 +93,6 @@
     .product-title{
         display: none;
     }
-    .service-slider-text{
-       color: #fff;
-    }
+    
     
 }
